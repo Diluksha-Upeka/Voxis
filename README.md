@@ -1,7 +1,7 @@
 # VOXIS - AI Voice Assistant
 
 ```mermaid
-flowchart LR
+flowchart TB
   %% — nodes
   A["🎤 Microphone"] --> B["Raw PCM\n(PCM)"]
   B --> C["WAV file\n(input.wav)"]
@@ -13,9 +13,9 @@ flowchart LR
   H --> I["AI Response"]
 
   %% — styling
-  classDef box fill:#0b1220,stroke:#2b556b,stroke-width:1px,color:#cfeef8,rx:8,ry:8;
+  classDef box fill:#ffffff,stroke:#007acc,stroke-width:2px,color:#000000,rx:8,ry:8;
   class A,B,C,D,E,F,G,H,I box;
-  linkStyle default stroke:#9be7ff,stroke-width:1.4px;
+  linkStyle default stroke:#007acc,stroke-width:2px;
 ```
 
 *Microphone → Raw PCM Audio → WAV file → Groq API → Whisper Model → Text → Llama Model → AI Response*
