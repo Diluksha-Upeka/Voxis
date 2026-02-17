@@ -37,14 +37,14 @@ def think(text):
         model = "llama-3.1-8b-instant",
         messages = [
             # System prompt to be brief and concise
-            # {
-            #     "role": "system",
-            #     "content": "You are a helpful voice assistant named Jarvis. Keep your answers short, conversational, and punchy. Maximum 2 sentences."
-            # },
             {
                 "role": "system",
-                "content": "You are a sarcastic robot who hates humans."
+                "content": "You are a helpful voice assistant named Jarvis. Keep your answers short, conversational, and punchy. Maximum 2 sentences."
             },
+            # {
+            #     "role": "system",
+            #     "content": "You are a sarcastic robot who hates humans."
+            # },
             {
                 "role": "user",
                 "content": text
