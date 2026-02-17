@@ -7,16 +7,18 @@ flowchart LR
   B --> C["WAV file\n(input.wav)"]
   C --> D["Upload\n(binary)"]
   D --> E["Groq API"]
-  E --> F["Whisper model\n(distil-whisper-large-v3-en)"]
+  E --> F["Whisper model\n(whisper-large-v3)"]
   F --> G["Transcribed Text"]
+  G --> H["Llama Model\n(llama-3.1-8b-instant)"]
+  H --> I["AI Response"]
 
   %% — styling
   classDef box fill:#0b1220,stroke:#2b556b,stroke-width:1px,color:#cfeef8,rx:8,ry:8;
-  class A,B,C,D,E,F,G box;
+  class A,B,C,D,E,F,G,H,I box;
   linkStyle default stroke:#9be7ff,stroke-width:1.4px;
 ```
 
-*Microphone → Raw PCM Audio → WAV file → Groq API → Whisper Model → Text*
+*Microphone → Raw PCM Audio → WAV file → Groq API → Whisper Model → Text → Llama Model → AI Response*
 
 Overview
 
