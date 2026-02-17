@@ -3,14 +3,18 @@
 ```mermaid
 flowchart TB
   %% — nodes
-  A["Microphone"] --> B["Raw PCM\n(PCM)"]
+  A["Microphone"] --> B["Raw PCM
+  (PCM)"]
   B --> C["WAV file
   (input.wav)"]
-  C --> D["Upload\n(binary)"]
+  C --> D["Upload
+  (binary)"]
   D --> E["Groq API"]
-  E --> F["Whisper model\n(whisper-large-v3)"]
+  E --> F["Whisper model
+  (whisper-large-v3)"]
   F --> G["Transcribed Text"]
-  G --> H["Llama Model\n(llama-3.1-8b-instant)"]
+  G --> H["Llama Model
+  (llama-3.1-8b-instant)"]
   H --> I["AI Response"]
 
   %% — styling
